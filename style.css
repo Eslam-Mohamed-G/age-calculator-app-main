@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--Off-white);
+    padding: 1.25rem;
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: fit-content;
+    background-color: var(--White);
+    border-radius: 15px 15px 150px 15px;
+    padding: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.content {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--Light-grey);
+    color: var(--Smokey-grey);
+    position: relative;
+    display: flex;
+    padding-right: 70px;
+}
+
+.content span {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Light-red);
+    font-style: italic;
+    margin: 5px 0;
+}
+
+input {
+    font-size: 32px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 0.5px solid var(--Light-grey);
+    outline: none;
+    letter-spacing: 2px;
+    caret-color: var(--Purple);
+}
+
+input:focus {
+    border: 0.5px solid var(--Purple);
+}
+
+p.error {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Light-red);
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.div-form {
+    display: grid;
+    text-align: left;
+    margin-right: 15px;
+}
+
+
+button {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: var(--Purple);
+    right: 0px;
+    bottom: -35px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--Off-black);
+}
+
+.result {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.result span {
+    color: var(--Purple);
+    font-style: italic;
+}
+
+
+@media(max-width: 1020px) {
+    input {
+        margin-bottom: 40px;
+        font-size: 18px;
+        width: 80px;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+
+    .contanier {
+        background: var(--White);
+        width: fit-content;
+        padding: 20px;
+        border-radius: 10px;
+        border-bottom-right-radius: 30%;
+        position: relative;
+    }
+
+    .content{
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .result {
+        font-size: 25px;
+        font-style: italic;
+    }
+
+    button {
+        right: 40%;
+    }
+
+    .error {
+        font-size: 10px;
+    }
+
+}
